@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState, ChangeEvent } from "react";
 
-const Password = () => {
-  const [pass, setPass] = useState("");
-  const [ss, setSs] = useState('');
-  const [flag, setFlag] = useState(true);
+const Password: React.FC = () => {
+  const [pass, setPass] = useState<string>("");
+  const [ss, setSs] = useState<string>('');
+  const [flag, setFlag] = useState<boolean>(true);
 
   const make = () => {
     if (flag) {
@@ -18,6 +18,10 @@ const Password = () => {
     }
   };
 
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setPass(e.target.value);
+  };
+
   return (
     <>
       {pass}
@@ -25,7 +29,7 @@ const Password = () => {
       <input
         type="text"
         value={pass}
-        onChange={(e) => setPass(e.target.value)}
+        onChange={handleChange}
       />
       <button onClick={make}>Eye</button>
     </>
