@@ -13,7 +13,9 @@ function ModalPage() {
         visible && <Modal setVisible={setVisible}/>
     }
     
-    <button onClick={fun} disabled={visible}>Show/Hide modal</button>
+    {
+        !visible && <button onClick={fun} disabled={visible}>Show/Hide modal</button>
+    }
     </>
   )
 }
