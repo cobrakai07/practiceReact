@@ -1,4 +1,8 @@
-function Modal({setVisible}: {setVisible: (value: boolean) => void}){
+interface ModalProps {
+    setVisible: (value: boolean) => void;
+}
+
+function Modal({setVisible}: ModalProps){
     function fun(){
         setVisible(false);
     }
