@@ -3,6 +3,7 @@ import CoinFlip from './mock-components/CoinFlip';
 import ModalPage from './mock-components/ModalPage';
 import Password from './mock-components/Password';
 import { Todo } from './mock-components/Todo';
+import TypingTest from './mock-components/TypingTest';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
     <Todo/>
     <ModalPage/>
     <CoinFlip/>
+    <TypingTest/>
     </div>
       
     </>
