@@ -1,5 +1,6 @@
 import './App.css';
 import CoinFlip from './mock-components/CoinFlip';
+import GiveStarReview from './mock-components/GiveStarReview';
 import ModalPage from './mock-components/ModalPage';
 import Password from './mock-components/Password';
 import { Todo } from './mock-components/Todo';
@@ -14,6 +15,7 @@ function App() {
     <ModalPage/>
     <CoinFlip/>
     <TypingTest/>
+    <GiveStarReview/>
     </div>
       
     </>
