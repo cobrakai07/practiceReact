@@ -6,20 +6,14 @@ import Password from './mock-components/Password';
 import Quiz from './mock-components/Quiz';
 import { Todo } from './mock-components/Todo';
 import TypingTest from './mock-components/TypingTest';
+import GroupChat from './mock-components/GroupChat';
+import  Otp  from './mock-components/Otp';
+
 
 function App() {
   return (
     <>
-    <div className='flex flex-col gap-5 bg-red-500'>
-    <Password />
-    <Todo/>
-    <ModalPage/>
-    <CoinFlip/>
-    <TypingTest/>
-    <GiveStarReview/>
-    <Quiz/>
-    </div>
-      
+    <Otp/>
     </>
   );
 }
